@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Bella Napoli - Autêntica Pizza Italiana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="fonte-padrao">
+    <!-- Header/Navigation -->
+    <header class="cabecalho-fixo">
+        <div class="container-header">
+            <div class="logo-container">
+                <i class="fas fa-pizza-slice logo-icone"></i>
+                <h1 class="logo-texto">Bella Napoli</h1>
+            </div>
+            <nav class="navegacao-principal">
+                <a href="#inicio" class="link-navegacao">Início</a>
+                <a href="#cardapio" class="link-navegacao">Cardápio</a>
+                <a href="#about" class="link-navegacao">Sobre</a>
+                <a href="#testimonials" class="link-navegacao">Avaliações</a>
+                <a href="#contact" class="link-navegacao">Contato</a>
+            </nav>
+            <nav id="menu-mobile" class="menu-mobile">
+                <a href="#inicio" class="link-navegacao-mobile">Início</a>
+                <a href="#cardapio" class="link-navegacao-mobile">Cardápio</a>
+                <a href="#about" class="link-navegacao-mobile">Sobre</a>
+                <a href="#testimonials" class="link-navegacao-mobile">Avaliações</a>
+                <a href="#contact" class="link-navegacao-mobile">Contato</a>
+            </nav>
+            <div class="container-acoes">
+                <a href="tel:+5511912345678" class="link-telefone">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span>(11) 91234-5678</span>
+                </a>
+                <a href="#contact" class="botao-primario">Peça Agora</a>
+                <button id="botao-menu-mobile" class="botao-menu-mobile" title="Abrir menu móvel">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Inicial -->
+    <section id="inicio" class="banner-principal min-h-screen flex items-center">
+        <div class="container-pagina">
+            <div class="container-hero">
+                <h1 class="titulo-hero">A Melhor Pizza da Cidade</h1>
+                <p class="texto-descricao mb-8">Ingredientes frescos, massa artesanal e o verdadeiro sabor da Itália em
+                    cada fatia.</p>
+                <div class="container-botoes">
+                    <a href="#contact" class="botao-hero botao-primario">Faça seu Pedido</a>
+                    <a href="#cardapio" class="botao-hero botao-secundario">Ver Cardápio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Cardápio -->
+    <section id="cardapio" class="secao-padrao">
+        <div class="container-pagina">
+            <div class="container-secao-header">
+                <h2 class="titulo-secao">Nosso Cardápio</h2>
+                <p class="subtitulo-secao">Explore nossas deliciosas pizzas artesanais</p>
+            </div>
+
+            <div class="container-filtros">
+                <div class="grupo-filtros">
+                    <button class="botao-categoria ativo" data-category="all">Todas</button>
+                    <button class="botao-categoria" data-category="tradicional">Tradicionais</button>
+                    <button class="botao-categoria" data-category="especial">Especiais</button>
+                </div>
+            </div>
+
+            <div class="grid-cardapio"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="secao-alternada">
+        <div class="container-pagina">
+            <div class="layout-duas-colunas">
+                <div class="coluna-imagem">
+                    <img src="https://images.unsplash.com/photo-1511516412963-801b050c92aa"
+                        alt="Pizzaiolo preparando pizza" class="imagem-destaque">
+                </div>
+                <div class="coluna-conteudo">
+                    <h2 class="titulo-secao">Nossa História</h2>
+                    <p class="texto-corpo">Fundada em 2010 pelo chef Marco Bellucci, a Pizzaria Bella Napoli
+                        nasceu do sonho de trazer o verdadeiro sabor napolitano para cada mesa.</p>
+                    <p class="texto-corpo">Usando técnicas tradicionais e ingredientes selecionados,
+                        nossas pizzas são preparadas com paixão e dedicação, seguindo receitas familiares.</p>
+
+                    <div class="grid-beneficios">
+                        <div class="item-beneficio">
+                            <i class="fas fa-check-circle icone-beneficio"></i>
+                            <span>Mais de 25 anos de experiência</span>
+                        </div>
+                        <div class="item-beneficio">
+                            <i class="fas fa-check-circle icone-beneficio"></i>
+                            <span>Ingredientes importados</span>
+                        </div>
+                        <div class="item-beneficio">
+                            <i class="fas fa-check-circle icone-beneficio"></i>
+                            <span>Atendimento personalizado</span>
+                        </div>
+                        <div class="item-beneficio">
+                            <i class="fas fa-check-circle icone-beneficio"></i>
+                            <span>Ambiente familiar</span>
+                        </div>
+                    </div>
+
+                    <button class="botao-primario">Conheça Nossa Cozinha</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="secao-alternada">
+        <div class="container-pagina">
+            <div class="container-secao-header">
+                <h2 class="titulo-secao">O que nossos clientes dizem</h2>
+                <p class="subtitulo-secao">Avaliações de quem já experimentou nossas pizzas</p>
+            </div>
+
+            <div class="grid-depoimentos">
+                <div class="cartao-depoimento">
+                    <div class="cabecalho-depoimento">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Ana Silva" class="foto-cliente">
+                        <div>
+                            <h4 class="nome-cliente">Ana Silva</h4>
+                            <div class="avaliacao-estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="texto-depoimento">"A melhor pizza que já comi! A massa é perfeita e os ingredientes são
+                        sempre frescos. Recomendo muito!"</p>
+                </div>
+
+                <div class="cartao-depoimento">
+                    <div class="cabecalho-depoimento">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Carlos Santos"
+                            class="foto-cliente">
+                        <div>
+                            <h4 class="nome-cliente">Carlos Santos</h4>
+                            <div class="avaliacao-estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="texto-depoimento">"Atendimento excelente e pizza deliciosa! O delivery é sempre pontual e
+                        as pizzas chegam quentinhas."</p>
+                </div>
+
+                <div class="cartao-depoimento">
+                    <div class="cabecalho-depoimento">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Marina Oliveira"
+                            class="foto-cliente">
+                        <div>
+                            <h4 class="nome-cliente">Marina Oliveira</h4>
+                            <div class="avaliacao-estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="texto-depoimento">"Ambiente acolhedor e pizza incomparável! A Quattro Formaggi é
+                        simplesmente divina."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="secao-padrao">
+        <div class="container-pagina">
+            <div class="container-contato">
+                <div class="coluna-conteudo">
+                    <h2 class="titulo-secao">Entre em Contato</h2>
+                    <p class="texto-corpo">Tem dúvidas, sugestões ou quer fazer uma reserva? Entre em contato conosco!
+                    </p>
+
+                    <div class="lista-contatos">
+                        <div class="item-contato">
+                            <i class="fas fa-map-marker-alt icone-contato"></i>
+                            <span>Avenida Gastronomia, 456 - Jardim Itália, São Paulo/SP</span>
+                        </div>
+                        <div class="item-contato">
+                            <i class="fas fa-phone-alt icone-contato"></i>
+                            <span>(11) 91234-5678</span>
+                        </div>
+                        <div class="item-contato">
+                            <i class="fas fa-envelope icone-contato"></i>
+                            <span>contato@bellanapoli.com.br</span>
+                        </div>
+                        <div class="item-contato">
+                            <i class="fas fa-clock icone-contato"></i>
+                            <span>Segunda a Sábado: 18h - 23h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coluna-conteudo">
+                    <form id="formulario-contato" class="formulario-contato" novalidate>
+                        <div class="grupo-formulario">
+                            <label for="name" class="label-formulario">Nome *</label>
+                            <input type="text" id="name" name="name" class="campo-formulario" required minlength="3"
+                                maxlength="50">
+                            <span class="feedback-erro"></span>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="email" class="label-formulario">Email *</label>
+                            <input type="email" id="email" name="email" class="campo-formulario" required>
+                            <span class="feedback-erro"></span>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="phone" class="label-formulario">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="campo-formulario"
+                                pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(11) 99999-9999">
+                            <span class="feedback-erro"></span>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="message" class="label-formulario">Mensagem *</label>
+                            <textarea id="message" name="message" class="campo-formulario" required minlength="10"
+                                maxlength="500"></textarea>
+                            <span class="contador-caracteres">0/500</span>
+                            <span class="feedback-erro"></span>
+                        </div>
+                        <button type="submit" class="botao-primario botao-formulario">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="rodape">
+        <div class="container-pagina">
+            <div class="rodape-grid">
+                <div class="coluna-rodape">
+                    <div class="logo-container">
+                        <i class="fas fa-pizza-slice logo-icone"></i>
+                        <h1 class="logo-texto">Bella Napoli</h1>
+                    </div>
+                    <p class="rodape-texto">Trazendo o verdadeiro sabor da Itália para sua mesa desde 2010. Nossa paixão
+                        é fazer as melhores pizzas com ingredientes selecionados.</p>
+                    <div class="redes-sociais">
+                        <a href="#" class="link-social" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="link-social" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="link-social" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="link-social" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="coluna-rodape">
+                    <h3 class="rodape-titulo">Links Rápidos</h3>
+                    <ul class="rodape-lista">
+                        <li><a href="#inicio" class="link-rodape">Início</a></li>
+                        <li><a href="#menu" class="link-rodape">Cardápio</a></li>
+                        <li><a href="#about" class="link-rodape">Sobre Nós</a></li>
+                        <li><a href="#testimonials" class="link-rodape">Avaliações</a></li>
+                        <li><a href="#contact" class="link-rodape">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna-rodape">
+                    <h3 class="rodape-titulo">Contato</h3>
+                    <ul class="rodape-lista">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Av. Gastronomia, 456</li>
+                        <li><i class="fas fa-phone-alt mr-2"></i> (11) 91234-5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contato@bellanapoli.com.br</li>
+                        <li><i class="fas fa-clock mr-2"></i> Seg-Sáb: 18h - 23h</li>
+                    </ul>
+                </div>
+
+                <div class="coluna-rodape">
+                    <h3 class="rodape-titulo">Newsletter</h3>
+                    <p class="rodape-texto">Receba nossas novidades e promoções exclusivas!</p>
+                    <form class="form-newsletter" onsubmit="return false;">
+                        <input type="email" placeholder="Seu e-mail" class="campo-newsletter campo-formulario">
+                        <button type="submit" class="botao-primario" title="Enviar"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rodape-inferior">
+                <p class="direitos">© 2025 Pizzaria Bella Napoli. Todos os direitos reservados.</p>
+                <div class="links-inferiores">
+                    <a href="#" class="link-rodape">Política de Privacidade</a>
+                    <span class="separador">|</span>
+                    <a href="#" class="link-rodape">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511912345678" class="botao-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-whatsapp">Fale conosco!</span>
+    </a>
+</body>
+
+</html>
