@@ -906,3 +906,26 @@ textarea.campo-formulario {
         font-size: 1.25rem;
     }
 }
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 2000;
+    background: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.whatsapp-float:hover {
+    background: #128c7e;
+}
