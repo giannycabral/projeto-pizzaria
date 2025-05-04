@@ -1,4 +1,108 @@
+/* Navbar responsiva aprimorada */
+@media (max-width: 768px) {
+    .menu-mobile {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fff;
+        z-index: 2001;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-20px);
+    }
+    .menu-mobile.visivel {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+    .link-navegacao-mobile {
+        font-size: 1.1rem;
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+        text-align: left;
+    }
+    .container-header {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Ajustes extras para responsividade mobile */
+@media (max-width: 480px) {
+    .container-header,
+    .container-pagina {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .titulo-hero {
+        font-size: 1.5rem;
+    }
+
+    .banner-principal {
+        padding-top: 5rem;
+        min-height: 60vh;
+    }
+
+    .secao-padrao,
+    .secao-alternada {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .titulo-secao {
+        font-size: 1.5rem;
+    }
+
+    .grid-beneficios,
+    .grid-depoimentos,
+    .rodape-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .foto-cliente {
+        width: 40px;
+        height: 40px;
+    }
+
+    .formulario-contato {
+        padding: 1rem;
+    }
+
+    .botao-primario,
+    .botao-secundario {
+        padding: 0.75rem 1rem;
+        min-width: 120px;
+        font-size: 0.95rem;
+    }
+
+    .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .logo-icone {
+        font-size: 1.25rem;
+    }
+    .logo-texto {
+        font-size: 1rem;
+    }
+}
+
 
 /* Cores */
 :root {

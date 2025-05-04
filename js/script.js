@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".botao-categoria");
   const botaoMenuMobile = document.getElementById("botao-menu-mobile");
   const menuMobile = document.getElementById("menu-mobile");
+  const navLinksMobile = document.querySelectorAll(".link-navegacao-mobile");
 
   // Função para filtrar e mostrar os itens do menu
   function filterMenu(category) {
@@ -96,6 +97,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (botaoMenuMobile && menuMobile) {
     botaoMenuMobile.addEventListener("click", () => {
       menuMobile.classList.toggle("visivel");
+    });
+    // Fecha o menu mobile ao clicar em qualquer link
+    navLinksMobile.forEach(link => {
+      link.addEventListener("click", () => {
+        menuMobile.classList.remove("visivel");
+      });
     });
   }
   // Inicializar o cardápio
